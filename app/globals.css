@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ 
+ 
+ 
+.homepage-img {
+    object-fit: cover;
+    object-position: center;
+    position: fixed;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/* Hide horizontal scrollbar */
+::-webkit-scrollbar:horizontal {
+    height: 0;
+}
+
+
+.parallax-image-wrapper {
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  .parallax-image {
+    transform: translateZ(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .parallax-image:hover {
+    transform: translateY(-10px); /* Adjust the value for the desired parallax effect */
+  }
