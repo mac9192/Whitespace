@@ -37,7 +37,7 @@ const ArtistListPage  = () => {
           <div key={artist.slug.current} className="bg-white border-b ">
           
            
-             <a href={`/artists/${artist.slug.current}`}><Image className="w-full max-h-[250px] object-cover  "  src={urlFor(artist.profilePic.asset._ref).url()}   width={1000} height={1000} alt={artist.name} /></a>  
+             <a href={`/artists/${artist.slug.current}`}><Image className="w-full max-h-[200px] object-cover  "  src={urlFor(artist.profilePic.asset._ref).url()}   width={1000} height={1000} alt={artist.name} /></a>  
         
             <div className="p-4">
               <h3 className="text-xl font-semibold">{artist.name}</h3>

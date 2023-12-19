@@ -61,7 +61,7 @@ type Props = {
                 {artist.imageGallery.map((image:any) => (
                   <li key={image._key}>
                  
-                    <Image className="min-h-[500px] max-h-[500px] pb-5  bg-fixed " src={image.imageUrl} alt={image.title} width={500} height={0} />
+                    <Image className="  pb-5  bg-fixed " src={image.imageUrl} alt={image.title} width={500} height={0} />
                     <div className="mx-auto">
                     <h3 className="text-left text-xl">{image.title}</h3>
                     <p className="mx-auto pt-2">{image.dimensions}</p>
