@@ -44,7 +44,7 @@ type Props = {
        {artist && (
          <>
 
-
+ 
 <div className="flex">
  {/* Left Menu */}
  <div className="sticky top-0 h-screen w-1/4   p-4">
@@ -52,37 +52,61 @@ type Props = {
  </div>
 
  {/* Right Content */}
- <div className="flex-1 overflow-y-scroll   ">
+ 
 
 
- <div>
+  
               
-              <ul className="grid grid-cols-2 md:grid-cols-2 gap-4  pl-10   mx-auto  ">
+              <ul className="grid grid-cols-2 md:grid-cols-2 gap-8  pl-10    mx-auto    ">
                 {artist.imageGallery.map((image:any) => (
-                  <li key={image._key}>
-                 
-                    <Image className="  pb-5  bg-fixed " src={image.imageUrl} alt={image.title} width={500} height={0} />
-                    <div className="mx-auto">
+                  <li className="    "key={image._key}>
+                  
+                    <Image className=" max-h-[400px] min-h-[310px] pb-5   max-auto object-fill" src={image.imageUrl} alt={image.title} width={500} height={0} />
+                    <div className="mx-auto"> 
                     <h3 className="text-left text-xl">{image.title}</h3>
                     <p className="mx-auto pt-2">{image.dimensions}</p>
                     <p className="pb-10 pt-2  w-3/4">{image.description}</p>
                     </div>
+                   
+               
+                  
                  
                   </li>
                 ))}
               </ul>
-</div>
+ 
 
        
       
        
- </div>
+ 
 </div>
           
          </>
        )}
+
      </div>
    );
  };
  
  export default Gallery;
+
+
+ /*
+
+   <li className="  bg-black "key={image._key}>
+                  
+                    <Image className="   pb-5   max-auto object-fill" src={image.imageUrl} alt={image.title} width={500} height={0} />
+                    <div className="mx-auto">
+                    <h3 className="text-left text-xl">{image.title}</h3>
+                    <p className="mx-auto pt-2">{image.dimensions}</p>
+                    <p className="pb-10 pt-2  w-3/4">{image.description}</p>
+                    </div>
+                   
+               
+                  
+                 
+                  </li>
+
+
+ */
