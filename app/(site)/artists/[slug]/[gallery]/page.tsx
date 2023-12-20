@@ -62,7 +62,7 @@ type Props = {
                   <li className="    "key={image._key}>
                   
                     <Image className=" max-h-[350px] min-h-[350px] pb-5  max-w-md mx-auto object-fill" src={image.imageUrl} alt={image.title} width={400} height={1000} />
-                    <div className="mx-auto"> 
+                    <div className="mx-auto max-w-sm"> 
                     <h3 className="text-left text-xl">{image.title}</h3>
                     <p className="mx-auto pt-2">{image.dimensions}</p>
                     <p className="pb-10 pt-2  w-3/4">{image.description}</p>
