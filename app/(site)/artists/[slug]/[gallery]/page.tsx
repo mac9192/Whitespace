@@ -45,7 +45,7 @@ type Props = {
          <>
 
  
-<div className="flex">
+<div className="flex flex-row">
  {/* Left Menu */}
  <div className="sticky top-0 h-screen w-1/4   p-4">
    <Sidenav slug={artist.slug} name={artist.name} />
@@ -57,11 +57,11 @@ type Props = {
 
   
               
-              <ul className="grid grid-cols-2 md:grid-cols-2 gap-8  pl-10    mx-auto    ">
+              <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-[105px]    pl-10    mx-auto  p-10   ">
                 {artist.imageGallery.map((image:any) => (
                   <li className="    "key={image._key}>
                   
-                    <Image className=" max-h-[400px] min-h-[310px] pb-5   max-auto object-fill" src={image.imageUrl} alt={image.title} width={500} height={0} />
+                    <Image className=" max-h-[350px] min-h-[350px] pb-5  max-w-md mx-auto object-fill" src={image.imageUrl} alt={image.title} width={400} height={1000} />
                     <div className="mx-auto"> 
                     <h3 className="text-left text-xl">{image.title}</h3>
                     <p className="mx-auto pt-2">{image.dimensions}</p>
