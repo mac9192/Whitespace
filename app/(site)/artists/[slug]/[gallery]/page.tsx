@@ -57,7 +57,7 @@ type Props = {
 
   
               
-              <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-[105px]    pl-10    mx-auto  p-10   ">
+              <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2  gap-[105px]    pl-10    mx-auto  p-10   ">
                 {artist.imageGallery.map((image:any) => (
                   <li className="    "key={image._key}>
                   
