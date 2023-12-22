@@ -89,7 +89,7 @@ const Gallery = ({ params }: Props) => {
                 <img
                   src={selectedImage}
                   alt={selectedImageInfo.title}
-                  className="max-w-full max-h-[700px] mx-auto"
+                  className="max-w-full max-h-[600px] mx-auto"
                 />
                 <div className="text-xl mt-4">{selectedImageInfo.title}</div>
                 <div className="text-lg mt-2">
