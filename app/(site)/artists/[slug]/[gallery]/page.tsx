@@ -46,7 +46,7 @@ const Gallery = ({ params }: Props) => {
       {artist && (
         <>
           <div className="flex flex-row">
-            <div className="sticky top-0 h-screen w-1/4 p-4">
+            <div className="sticky top-0 h-screen w-1/5 p-4">
               <Sidenav slug={artist.slug} name={artist.name} />
             </div>
             <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-[105px] pl-10 mx-auto p-10">
@@ -69,8 +69,8 @@ const Gallery = ({ params }: Props) => {
                   </button>
                   <div className="mx-auto max-w-sm">
                     <h3 className="text-left text-xl">{image.title}</h3>
-                    <p className="mx-auto pt-2">{image.dimensions}</p>
-                    <p className="pb-10 pt-2 w-3/4">{image.description}</p>
+                    <p className="mx-auto pt-2 text-textgray">{image.dimensions}</p>
+                    <p className="pb-10 pt-2 w-3/4 text-textgray">{image.description}</p>
                   </div>
                 </li>
               ))}
@@ -92,10 +92,10 @@ const Gallery = ({ params }: Props) => {
                   className="max-w-full max-h-[600px] mx-auto"
                 />
                 <div className="text-xl mt-4">{selectedImageInfo.title}</div>
-                <div className="text-lg mt-2">
+                <div className="text-lg mt-2 text-textgray">
                   {selectedImageInfo.dimensions}
                 </div>
-                <div className="mt-2">{selectedImageInfo.description}</div>
+                <div className="mt-2 text-textgray">{selectedImageInfo.description}</div>
               </div>
             </div>
           )}

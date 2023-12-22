@@ -43,8 +43,8 @@ const Homepage = () => {
           <div className="absolute bottom-0 right-0  mb-32 ">
             <div className="bg-white h-46 w-96 text-black">
               <div className="p-5">
-                <p className="text-xl text-gray">Closing Soon</p>
-                <p className="mx-auto text-3xl  ">{homeData.title}</p>
+                <p className="text-xl text-textgray ">Closing Soon</p>
+                <p className="mx-auto text-3xl text-textgray  ">{homeData.title}</p>
               </div>
             </div>
           </div>

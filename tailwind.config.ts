@@ -19,7 +19,8 @@ const config: Config = {
     },
     extend: {
       colors: {
-        gray100: 'hsl(0,0% ,97% )'
+        gray100: 'hsl(0,0% ,97% )',
+        textgray: 'hsl(120, 1%, 37%)'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

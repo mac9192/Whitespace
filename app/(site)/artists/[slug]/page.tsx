@@ -45,15 +45,15 @@ type Props = {
     <>
       <div className="flex">
         {/* Left Menu */}
-        <div className="sticky top-0 h-screen w-1/4 pl-4">
+        <div className="sticky top-0 h-screen w-1/5 pl-4">
           <Sidenav slug={artist.slug} name={artist.name} />
         </div>
 
         {/* Right Content */}
         <div className="flex-1 overflow-y-scroll">
-          <div className="parallax-image-wrapper relative">
+          <div className="parallax-image-wrapper relative bg-gray bg-[image:var(--bg-small-url)]  " >
             <Image
-              className="max-w-[] mx-auto max-h-[600px] w-3/6 border-b parallax-image"
+              className="mx-auto max-h-[600px] w-2/4 border-b parallax-image"
               src={urlFor(artist.profilePic).url()}
               width={1000}
               height={500}
@@ -72,3 +72,12 @@ type Props = {
   };
   
   export default ArtistSlugPage;
+
+
+
+
+  /*
+
+
+
+  */

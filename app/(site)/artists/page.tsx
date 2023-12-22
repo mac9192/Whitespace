@@ -27,7 +27,7 @@ const ArtistListPage  = () => {
           
         {artists.map((artist) => (
            <a href={`/artists/${artist.slug.current}`} key={artist.slug.current}>
-           <div className="col-span-1 mx-auto">{artist.name}</div>
+           <div className="col-span-1 mx-auto text-textgray">{artist.name}</div>
          </a>
         ))}
       </div>
@@ -40,7 +40,7 @@ const ArtistListPage  = () => {
              <a href={`/artists/${artist.slug.current}`}><Image className="w-full max-h-[200px] min-h-[200px] object-cover  "  src={urlFor(artist.profilePic.asset._ref).url()}   width={1000} height={1000} alt={artist.name} /></a>  
         
             <div className="p-4">
-              <h3 className="text-xl font-semibold">{artist.name}</h3>
+              <h3 className="text-x font-semibold ">{artist.name}</h3>
             </div>
           </div>
         ))}

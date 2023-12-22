@@ -1,5 +1,6 @@
  
 import React from 'react';
+import Image from 'next/image'
 
 const navPages = [
   { title: 'Home', link: '/' },
@@ -15,10 +16,10 @@ const Navbar = () => {
         <div className="flex flex-row justify-between">
           <div>
             <a href="/" className="text-3xl">
-              WhiteSpace
+              <Image src='/assets/ws_logo.svg' width={200} height={300} alt='Whitespace Logo' />
             </a>
           </div>
-          <ul className="text-xl flex flex-row gap-x-10">
+          <ul className=" text-textgray flex flex-row gap-x-10 text-">
             {navPages.map((page, index) => (
               <li key={index}>
                 <a href={page.link}>{page.title}</a>

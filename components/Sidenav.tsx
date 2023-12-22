@@ -18,11 +18,11 @@ const Sidenav = ({ slug, name }:SidenavProps) => {
  console.log('sidenva',slug.current)
   return (
     <div>
-      <div className="sticky top-0 h-screen w-full bg-gray100 p-10   z-100 overflow-hidden">
-  <h2 className="text-3xl mb-10 border-b border-b-white pb-10 ">{name}</h2>
+      <div className="sticky top-0 h-screen w-full bg-gray100 p-10  text-textgray z-100 overflow-hidden">
+  <h2 className="text-3xl  border-b border-b-hsl(120, 1%, 37%) pb-5 mb-10 mx-auto  pt-3">{name}</h2>
         <ul className="space-y-4">
           {navItems.map((item, index) => (
-            <li key={index} className="py-2 border-b border-b-white text-xl">
+            <li key={index} className="py-2 border-b border-b-hsl(120, 1%, 37%)  ">
               <a className=" " href={item.link}>{item.title}</a>
             </li>
           ))}
